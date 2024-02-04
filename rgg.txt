@@ -1,4 +1,3 @@
-
 Retro Game Gauntlet
 
 Inspired by a challnege /vr/ used to run
@@ -17,22 +16,6 @@ Rules:
 - If the game is impossible to technically complete(something like animal crossing/the sims for example) look up if there is some kind of final goal to complete or else just reroll
 - Including japanese games is up to you, certain consoles(turbografx and saturn) have much bigger jp libraries but you run the risk of getting something you cant understand or a visual novel of some kind
 
-
-Use this site to roll games:
-https://www.cambysses.com/gauntlet/
-https://github.com/Cambysses/cambysses.github.io/tree/master/gauntlet/content/games
-If both of those go down I have copies of all the lists
-If the first link is down I have it running locally, so just shoot me a message for what you need to roll
-
-
-For consoles not on that site:
-Gamecube: https://www.listchallenges.com/all-north-american-release-gamecube-games roll random.org
- min: 1 max: 555
-
-ps2 https://www.listchallenges.com/all-north-american-release-playstation-2-games roll random.org
- min 1 max: 1749
-
-
 The ordering:
 1. NES 
 2. Master System
@@ -49,21 +32,3 @@ The ordering:
 13. Playstation 2
 14. Game Boy Advance 
 15. Gamecube
-
-
-
-
-Where to find roms:
-https://r-roms.github.io/
-https://vimm.net/
-
-Where to find emulators:
-Use retroarch, or use this https://emulation.gametechwiki.com/index.php/Main_Page
-
-To make using emulators easy, if not using retroarch, add them as non steam games in steam so that you get steam controller support
-
-
-
-Current Progress:
-
-Persons Name: Stage # - Game Title 
