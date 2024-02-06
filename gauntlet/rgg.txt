@@ -1,0 +1,34 @@
+Retro Game Gauntlet
+
+Inspired by a challenge /vr/ used to run
+
+Rules:
+
+- Roll a game for each console
+- Compete the game with a screenshot
+	- If game is hiscore based(no completion possible), then you must beat the games hiscore for hardest mode or if thats really easy set a goal to beat
+- If game offers diffuculty selection then you must play on at least normal
+- No using cheats, save states, rewind, etc.
+- No using walkthroughs, guides, or googling, retro games are complicated and often confusing but thats part of the challenge
+- Reroll only if game is impossible to emulate(there are some games that would require accessories impossible to emulate)
+- If you truly give up on a game(only do this if there is 100% no way you beat it) then you go back one square and do one for that
+	- You can reroll NES if you give up on that, but you need to wait 3 days to reroll NES again(this is to prevent just spam rerolling NES without consequence)
+- If the game is impossible to technically complete(something like animal crossing/the sims for example) look up if there is some kind of final goal to complete or else just reroll
+- Including japanese games is up to you, certain consoles(turbografx and saturn) have much bigger jp libraries but you run the risk of getting something you cant understand or a visual novel of some kind
+
+The ordering:
+1. NES 
+2. Master System
+3. Turbografx-16 
+4. Genesis 
+5. Game Boy 
+6. Super NES 
+7. Game Gear 
+8. Sega Saturn 
+9. Playstation 
+10. Nintendo 64 
+11. Game Boy Color 
+12. Dreamcast 
+13. Playstation 2
+14. Game Boy Advance 
+15. Gamecube
