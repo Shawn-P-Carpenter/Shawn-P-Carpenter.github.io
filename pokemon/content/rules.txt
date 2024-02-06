@@ -1,0 +1,13 @@
+Beat the given game
+
+Choose the given starter, which may or may not be a part of your team, this is mainly for what your rival gets
+
+Your team must be made up of the pokemon randomly generated
+
+No using healing items in battle, this means no hp restoring, pp restoring, status healing, or x-items in battle
+
+
+Bonus rules:
+
+Hard mode only use 3 pokemon from the list(use the top three)
+Vary Hard mode only use the first pokemon from the list
