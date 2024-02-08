@@ -49,7 +49,7 @@ async function randomizeButton() {
         document.getElementById("poke" + i + "Info").target = "_blank";
         document.getElementById("poke" + i + "Info").textContent = randomPoke + " Locations";
         for(let j = 0; j < dex.length; j++) {
-            currRow = dex[j].split("-")
+            currRow = dex[j].split(",")
             if(currRow[0].toLowerCase() === randomPoke.toLowerCase()) {
                 if(randomGame === "crystal") {
                     document.getElementById("poke" + i + "Sprite").src = "content/sprites/" + randomGame + "/" + currRow[1] + ".gif";
