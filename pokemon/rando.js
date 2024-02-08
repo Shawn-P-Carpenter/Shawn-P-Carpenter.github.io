@@ -20,8 +20,12 @@ async function randomizeButton() {
 
     let pokes = await fetch(`content/${randomGame}.txt`).then(response => response.text());
     pokes = pokes.split(/\r?\n|\r/);
+    let randomPoke = "";
     for (let i = 1; i <= 6; i++) {
-        document.getElementById("poke" + i).textContent = "Party Pokemon #" + i + " " + pokes[getRandomInt(0, pokes.length)];
+        randomPoke = pokes[getRandomInt(0, pokes.length)]
+        document.getElementById("poke" + i).textContent = "Party Pokemon #" + i + " " + randomPoke;
+        document.getElementById("poke" + i + "Info").href = "https://bulbapedia.bulbagarden.net/wiki/" + randomPoke + "_(Pok%C3%A9mon)#Game_locations";
+        document.getElementById("poke" + i + "Info").textContent = randomPoke + " Locations";
     }
     document.getElementById("teamHeader").textContent = "Your team should be made up of the following pokemon:"
     
