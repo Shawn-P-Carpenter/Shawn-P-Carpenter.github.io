@@ -20,13 +20,22 @@ async function randomizeButton() {
     let dex = await fetch(`content/dex.txt`).then(response => response.text());
     dex = dex.split(/\r?\n|\r/)
     
-    let currRow = ""
+    let currRow = "";
+
+    let currTeam = [];
 
     let pokes = await fetch(`content/${randomGame}.txt`).then(response => response.text());
     pokes = pokes.split(/\r?\n|\r/);
     let randomPoke = "";
     for (let i = 1; i <= 6; i++) {
-        randomPoke = pokes[getRandomInt(0, pokes.length)]
+        while(1==1) {
+            randomPoke = pokes[getRandomInt(0, pokes.length)]
+            if(!currTeam.includes(randomPoke)) {
+                currTeam.push(randomPoke)
+                break;
+            }
+        }
+        // TODO need to add logic that the random one cannot already have been rolled
         document.getElementById("poke" + i).textContent = "Party Pokemon #" + i + " " + randomPoke;
         document.getElementById("poke" + i + "Info").href = "https://bulbapedia.bulbagarden.net/wiki/" + randomPoke + "_(Pok%C3%A9mon)#Game_locations";
         document.getElementById("poke" + i + "Info").textContent = randomPoke + " Locations";

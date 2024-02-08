@@ -1,3 +1,7 @@
 .pokeRow {
     display: none;
 }
+
+#errorText {
+    color: red;
+}
