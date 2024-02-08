@@ -35,7 +35,6 @@ async function randomizeButton() {
                 break;
             }
         }
-        // TODO need to add logic that the random one cannot already have been rolled
         document.getElementById("poke" + i).textContent = "Party Pokemon #" + i + " " + randomPoke;
         document.getElementById("poke" + i + "Info").href = "https://bulbapedia.bulbagarden.net/wiki/" + randomPoke + "_(Pok%C3%A9mon)#Game_locations";
         document.getElementById("poke" + i + "Info").textContent = randomPoke + " Locations";

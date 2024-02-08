@@ -11,3 +11,4 @@ Bonus rules:
 
 Hard mode only use 3 pokemon from the list(use the top three)
 Vary Hard mode only use the first pokemon from the list
+For either hard mode, cant use pre evolutions, have to find the specified pokemon
