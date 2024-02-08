@@ -6,6 +6,15 @@ async function randomizeButton() {
     if(document.querySelector("#gen2Check").checked === true) {
         listOfGames = listOfGames.concat(["gold", "silver", "crystal"]);
     }
+    if(document.querySelector("#gen3Check").checked === true) {
+        listOfGames = listOfGames.concat(["ruby", "sapphire", "emerald"]);
+    }
+    if(document.querySelector("#gen4Check").checked === true) {
+        listOfGames = listOfGames.concat(["diamond", "pearl", "platinum"]);
+    }
+    if(document.querySelector("#gen5Check").checked === true) {
+        listOfGames = listOfGames.concat(["black", "white"]);
+    }
 
     if(listOfGames.length == 0) {
         document.getElementById("errorText").textContent = "You need to select at least one generation";
