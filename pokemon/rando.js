@@ -46,6 +46,7 @@ async function randomizeButton() {
         }
         document.getElementById("poke" + i).textContent = "Party Pokemon #" + i + " " + randomPoke;
         document.getElementById("poke" + i + "Info").href = "https://bulbapedia.bulbagarden.net/wiki/" + randomPoke + "_(Pok%C3%A9mon)#Game_locations";
+        document.getElementById("poke" + i + "Info").target = "_blank";
         document.getElementById("poke" + i + "Info").textContent = randomPoke + " Locations";
         for(let j = 0; j < dex.length; j++) {
             currRow = dex[j].split("-")
