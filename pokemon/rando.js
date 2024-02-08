@@ -1,5 +1,4 @@
 async function randomizeButton() {
-    // let listOfGames = ["red", "blue", "yellow"];
     let listOfGames = [];
     if(document.querySelector("#gen1Check").checked === true) {
         listOfGames = listOfGames.concat(["red", "blue", "yellow"]);
@@ -18,6 +17,11 @@ async function randomizeButton() {
     let randomGame = listOfGames[getRandomInt(0, listOfGames.length)];
     document.getElementById("game").textContent = "The game is Pokemon " + randomGame;
 
+    let dex = await fetch(`content/dex.txt`).then(response => response.text());
+    dex = dex.split(/\r?\n|\r/)
+    
+    let currRow = ""
+
     let pokes = await fetch(`content/${randomGame}.txt`).then(response => response.text());
     pokes = pokes.split(/\r?\n|\r/);
     let randomPoke = "";
@@ -26,6 +30,17 @@ async function randomizeButton() {
         document.getElementById("poke" + i).textContent = "Party Pokemon #" + i + " " + randomPoke;
         document.getElementById("poke" + i + "Info").href = "https://bulbapedia.bulbagarden.net/wiki/" + randomPoke + "_(Pok%C3%A9mon)#Game_locations";
         document.getElementById("poke" + i + "Info").textContent = randomPoke + " Locations";
+        for(let j = 0; j < dex.length; j++) {
+            currRow = dex[j].split("-")
+            if(currRow[0].toLowerCase() === randomPoke.toLowerCase()) {
+                if(randomGame === "crystal") {
+                    document.getElementById("poke" + i + "Sprite").src = "content/sprites/" + randomGame + "/" + currRow[1] + ".gif";
+                } else {
+                    document.getElementById("poke" + i + "Sprite").src = "content/sprites/" + randomGame + "/" + currRow[1] + ".png";
+                }
+                j = dex.length + 1;
+            }
+        }
     }
     document.getElementById("teamHeader").textContent = "Your team should be made up of the following pokemon:"
     
@@ -34,10 +49,9 @@ async function randomizeButton() {
     let randomStarter = starterPokes[getRandomInt(0, starterPokes.length)];
     document.getElementById("starter").textContent = "Pick the starter: " + randomStarter;
 
+    $(".pokeRow").css("display", "block")
 
 }
-
-// add a checkbox for each gen that defaults to checked, then check each one and if its checked add its games to listOfGamesa
 
 // get a random integer between min(included) and max(excluded)
 function getRandomInt(min, max) {
